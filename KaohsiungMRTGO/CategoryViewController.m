@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  CategoryViewController.m
 //  KaohsiungMRTGO
 //
 //  Created by Makris on 2015/2/5.
 //  Copyright (c) 2015年 Makris. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CategoryViewController.h"
 
-@interface ViewController ()
+@interface CategoryViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CategoryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CategoryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,235 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-Xg-wzu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <items>
+                                    <barButtonItem image="ic_list_black_24dp.png" width="80" id="eZ3-l8-F33"/>
+                                    <barButtonItem image="ic_room_black_24dp.png" width="80" id="asi-Ir-rxM">
+                                        <connections>
+                                            <segue destination="AXO-HA-zbO" kind="modal" identifier="toMap" id="S2F-gW-XWE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_straighten_black_18dp.png" width="80" id="phR-Pt-gqe">
+                                        <connections>
+                                            <segue destination="YnR-1l-zqc" kind="modal" identifier="toDistance" id="VSv-Tk-nOj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_search_black_24dp.png" width="80" id="qJH-Vw-udo">
+                                        <connections>
+                                            <segue destination="sJP-31-Av9" kind="modal" identifier="toSearch" id="YGZ-qc-0Jf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-6" y="556" width="406" height="44"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="615" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="qbG-Xg-wzu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="qbG-Xg-wzu"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="313.5" y="375"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="owr-qA-GYe">
+            <objects>
+                <viewController id="AXO-HA-zbO" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6F4-P4-1iN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sf8-wv-yKr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1wz-Ac-fRT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLS-oM-i2v">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <items>
+                                    <barButtonItem image="ic_list_black_24dp.png" width="80" id="4lH-ph-AfR">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="toCategory" id="Wlr-cp-2sT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_room_black_24dp.png" width="80" id="JIm-iq-YYO"/>
+                                    <barButtonItem image="ic_straighten_black_18dp.png" width="80" id="6hH-fV-B0D">
+                                        <connections>
+                                            <segue destination="YnR-1l-zqc" kind="modal" identifier="toDistance" id="2ja-HT-oJV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_search_black_24dp.png" width="80" id="DdF-GA-FKf">
+                                        <connections>
+                                            <segue destination="sJP-31-Av9" kind="modal" identifier="toSearch" id="g8Q-bf-hBF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-6" y="556" width="406" height="44"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="606" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lLS-oM-i2v"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lLS-oM-i2v"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSM-Ab-DJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313.5" y="1056.75"/>
+        </scene>
+        <!--Distance View Controller-->
+        <scene sceneID="gVA-eH-T69">
+            <objects>
+                <viewController id="YnR-1l-zqc" customClass="DistanceViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="No9-Iy-6pg"/>
+                        <viewControllerLayoutGuide type="bottom" id="RhX-Ik-oKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LqP-63-lhS">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHZ-03-8Yi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <items>
+                                    <barButtonItem image="ic_list_black_24dp.png" width="80" id="zF9-r3-86N">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="toCategory" id="rSX-VE-WGE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_room_black_24dp.png" width="80" id="gfh-p3-O8A">
+                                        <connections>
+                                            <segue destination="AXO-HA-zbO" kind="modal" identifier="toMap" id="ROC-Y8-M29"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_straighten_black_18dp.png" width="80" id="JL5-dK-FVS"/>
+                                    <barButtonItem image="ic_search_black_24dp.png" width="80" id="xyT-JP-X7p">
+                                        <connections>
+                                            <segue destination="sJP-31-Av9" kind="modal" identifier="toSearch" id="p1z-C5-sAW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-6" y="556" width="406" height="44"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="607" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fHZ-03-8Yi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="fHZ-03-8Yi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eya-zC-WP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313.5" y="1742.25"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="QnF-Yz-kyP">
+            <objects>
+                <viewController id="sJP-31-Av9" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UoX-Fs-3si"/>
+                        <viewControllerLayoutGuide type="bottom" id="BsD-gh-brd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CSc-qf-7LG">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBS-fT-6BV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                <items>
+                                    <barButtonItem image="ic_list_black_24dp.png" width="80" id="0EO-zn-lSB">
+                                        <connections>
+                                            <segue destination="vXZ-lx-hvc" kind="modal" identifier="toCategory" id="N9O-lx-YYv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_room_black_24dp.png" width="80" id="XPs-UO-0W7">
+                                        <connections>
+                                            <segue destination="AXO-HA-zbO" kind="modal" identifier="toMap" id="9fM-UW-AF2"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_straighten_black_18dp.png" width="80" id="Id2-yg-Pe3">
+                                        <connections>
+                                            <segue destination="YnR-1l-zqc" kind="modal" identifier="toDistance" id="JcS-IM-aKA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="ic_search_black_24dp.png" width="80" id="vLS-KC-sah"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-6" y="556" width="406" height="44"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="605" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XBS-fT-6BV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XBS-fT-6BV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF7-ae-OY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="2467.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_list_black_24dp.png" width="48" height="48"/>
+        <image name="ic_room_black_24dp.png" width="48" height="48"/>
+        <image name="ic_search_black_24dp.png" width="48" height="48"/>
+        <image name="ic_straighten_black_18dp.png" width="54" height="54"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wlr-cp-2sT"/>
+        <segue reference="S2F-gW-XWE"/>
+        <segue reference="2ja-HT-oJV"/>
+        <segue reference="g8Q-bf-hBF"/>
+    </inferredMetricsTieBreakers>
 </document>
