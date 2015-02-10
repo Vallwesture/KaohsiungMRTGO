@@ -1,18 +1,18 @@
 //
-//  SearchViewController.m
+//  GenericViewController.m
 //  KaohsiungMRTGO
 //
-//  Created by MW on 2015/2/9.
+//  Created by MW on 2015/2/10.
 //  Copyright (c) 2015年 Makris. All rights reserved.
 //
 
-#import "SearchViewController.h"
+#import "GenericViewController.h"
 
-@interface SearchViewController ()
+@interface GenericViewController ()
 
 @end
 
-@implementation SearchViewController
+@implementation GenericViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
