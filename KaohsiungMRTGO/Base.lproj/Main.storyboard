@@ -14,7 +14,33 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9ZL-fS-Gch">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MRTmap.png" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-1U-BTx">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="117" width="391" height="509"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map_icon_expression.png" translatesAutoresizingMaskIntoConstraints="NO" id="D1P-Fy-kmp">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="113" y="0.0" width="174" height="134"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9367189931528167" green="0.9367189931528167" blue="0.9367189931528167" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UfC-1U-BTx"/>
+                                <exclude reference="D1P-Fy-kmp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UfC-1U-BTx"/>
+                                <include reference="D1P-Fy-kmp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="ic_room_black_24dp.png" id="KeN-w3-eAg"/>
                 </viewController>
@@ -99,9 +125,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MRTmap.png" width="930" height="1173"/>
         <image name="ic_list_black_24dp.png" width="48" height="48"/>
         <image name="ic_room_black_24dp.png" width="48" height="48"/>
         <image name="ic_search_black_24dp.png" width="48" height="48"/>
         <image name="ic_straighten_black_18dp.png" width="54" height="54"/>
+        <image name="map_icon_expression.png" width="596" height="501"/>
     </resources>
 </document>
