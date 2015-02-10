@@ -13,6 +13,8 @@
 		04F506421A88E80E00A264F1 /* ic_search_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F506411A88E80E00A264F1 /* ic_search_black_24dp.png */; };
 		04F506561A899F9000A264F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F506551A899F9000A264F1 /* ViewController.m */; };
 		04F506591A899FE900A264F1 /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F506581A899FE900A264F1 /* GenericViewController.m */; };
+		04F5065F1A89C16B00A264F1 /* map_icon_expression.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F5065E1A89C16B00A264F1 /* map_icon_expression.png */; };
+		04F506631A89C66100A264F1 /* MRTmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F506621A89C66100A264F1 /* MRTmap.png */; };
 		08C4234E1A836A5200B78D7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4234D1A836A5200B78D7D /* main.m */; };
 		08C423511A836A5200B78D7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C423501A836A5200B78D7D /* AppDelegate.m */; };
 		08C423541A836A5200B78D7D /* KaohsiungMRTGO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08C423521A836A5200B78D7D /* KaohsiungMRTGO.xcdatamodeld */; };
@@ -41,6 +43,8 @@
 		04F506551A899F9000A264F1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		04F506571A899FE900A264F1 /* GenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		04F506581A899FE900A264F1 /* GenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericViewController.m; sourceTree = "<group>"; };
+		04F5065E1A89C16B00A264F1 /* map_icon_expression.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_icon_expression.png; path = ../../../../Desktop/map_icon_expression.png; sourceTree = "<group>"; };
+		04F506621A89C66100A264F1 /* MRTmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MRTmap.png; path = ../../../../Downloads/MRTmap.png; sourceTree = "<group>"; };
 		08C423481A836A5200B78D7D /* KaohsiungMRTGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaohsiungMRTGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C4234C1A836A5200B78D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C4234D1A836A5200B78D7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 				04F5063D1A88E7E000A264F1 /* ic_list_black_24dp.png */,
 				04F5063F1A88E7F300A264F1 /* ic_room_black_24dp.png */,
 				04F506411A88E80E00A264F1 /* ic_search_black_24dp.png */,
+				04F5065E1A89C16B00A264F1 /* map_icon_expression.png */,
+				04F506621A89C66100A264F1 /* MRTmap.png */,
 				08C4234F1A836A5200B78D7D /* AppDelegate.h */,
 				08C423501A836A5200B78D7D /* AppDelegate.m */,
 				04F506541A899F9000A264F1 /* ViewController.h */,
@@ -221,10 +227,12 @@
 			files = (
 				04F5063E1A88E7E000A264F1 /* ic_list_black_24dp.png in Resources */,
 				04F506421A88E80E00A264F1 /* ic_search_black_24dp.png in Resources */,
+				04F5065F1A89C16B00A264F1 /* map_icon_expression.png in Resources */,
 				08C4235A1A836A5200B78D7D /* Main.storyboard in Resources */,
 				04F506401A88E7F300A264F1 /* ic_room_black_24dp.png in Resources */,
 				08C4235F1A836A5200B78D7D /* LaunchScreen.xib in Resources */,
 				08C4235C1A836A5200B78D7D /* Images.xcassets in Resources */,
+				04F506631A89C66100A264F1 /* MRTmap.png in Resources */,
 				04F5063C1A88E79500A264F1 /* ic_straighten_black_18dp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
