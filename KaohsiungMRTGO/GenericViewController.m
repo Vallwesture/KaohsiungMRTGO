@@ -45,10 +45,6 @@
     return [self.categoryTitle count];
 }
 
-- (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Catrgory";
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell"];
     cell.textLabel.text = [self.categoryTitle objectAtIndex:indexPath.row];
