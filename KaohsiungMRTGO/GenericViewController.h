@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GenericViewController : UIViewController
+@interface GenericViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *des;
+@property (nonatomic, strong) NSArray *categoryTitle;
+@property (nonatomic, strong) NSArray *categoryDescription;
 
 @end
