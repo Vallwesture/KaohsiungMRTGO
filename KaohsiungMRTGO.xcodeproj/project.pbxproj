@@ -11,7 +11,6 @@
 		04F5063E1A88E7E000A264F1 /* ic_list_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F5063D1A88E7E000A264F1 /* ic_list_black_24dp.png */; };
 		04F506401A88E7F300A264F1 /* ic_room_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F5063F1A88E7F300A264F1 /* ic_room_black_24dp.png */; };
 		04F506421A88E80E00A264F1 /* ic_search_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F506411A88E80E00A264F1 /* ic_search_black_24dp.png */; };
-		04F506561A899F9000A264F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F506551A899F9000A264F1 /* ViewController.m */; };
 		04F506591A899FE900A264F1 /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F506581A899FE900A264F1 /* GenericViewController.m */; };
 		04F5065F1A89C16B00A264F1 /* map_icon_expression.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F5065E1A89C16B00A264F1 /* map_icon_expression.png */; };
 		04F506631A89C66100A264F1 /* MRTmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F506621A89C66100A264F1 /* MRTmap.png */; };
@@ -39,8 +38,6 @@
 		04F5063D1A88E7E000A264F1 /* ic_list_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_list_black_24dp.png; sourceTree = "<group>"; };
 		04F5063F1A88E7F300A264F1 /* ic_room_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_room_black_24dp.png; sourceTree = "<group>"; };
 		04F506411A88E80E00A264F1 /* ic_search_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_search_black_24dp.png; sourceTree = "<group>"; };
-		04F506541A899F9000A264F1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		04F506551A899F9000A264F1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		04F506571A899FE900A264F1 /* GenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		04F506581A899FE900A264F1 /* GenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericViewController.m; sourceTree = "<group>"; };
 		04F5065E1A89C16B00A264F1 /* map_icon_expression.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_icon_expression.png; path = ../../../../Desktop/map_icon_expression.png; sourceTree = "<group>"; };
@@ -106,8 +103,6 @@
 				04F506621A89C66100A264F1 /* MRTmap.png */,
 				08C4234F1A836A5200B78D7D /* AppDelegate.h */,
 				08C423501A836A5200B78D7D /* AppDelegate.m */,
-				04F506541A899F9000A264F1 /* ViewController.h */,
-				04F506551A899F9000A264F1 /* ViewController.m */,
 				08C423581A836A5200B78D7D /* Main.storyboard */,
 				04F506571A899FE900A264F1 /* GenericViewController.h */,
 				04F506581A899FE900A264F1 /* GenericViewController.m */,
@@ -254,7 +249,6 @@
 				08C423541A836A5200B78D7D /* KaohsiungMRTGO.xcdatamodeld in Sources */,
 				08C423511A836A5200B78D7D /* AppDelegate.m in Sources */,
 				04F506591A899FE900A264F1 /* GenericViewController.m in Sources */,
-				04F506561A899F9000A264F1 /* ViewController.m in Sources */,
 				08C4234E1A836A5200B78D7D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
